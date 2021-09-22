@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "job_histories",
   "info": {
-    "name": "job_history"
+    "name": "job_history",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -33,7 +34,15 @@
     "Department_ID": {
       "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": false
+    },
+    "department": {
+      "via": "job_histories",
+      "model": "department"
+    },
+    "jobs": {
+      "collection": "job",
+      "via": "job_history"
     }
   }
 }
