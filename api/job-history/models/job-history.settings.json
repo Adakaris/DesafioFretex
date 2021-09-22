@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_histories",
+  "info": {
+    "name": "job_history"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Employee_ID": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "Start_Date": {
+      "type": "date",
+      "required": true
+    },
+    "End_Date": {
+      "type": "date",
+      "required": false
+    },
+    "Job_ID": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 10
+    },
+    "Department_ID": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "name": "job"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Job_ID": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 10
+    },
+    "Job_Title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 35
+    },
+    "Min_Salary": {
+      "type": "decimal",
+      "required": true
+    },
+    "Max_Salary": {
+      "type": "decimal"
+    }
+  }
+}
