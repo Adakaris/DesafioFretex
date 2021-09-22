@@ -28,6 +28,14 @@
     },
     "Max_Salary": {
       "type": "decimal"
+    },
+    "job_histories": {
+      "via": "job",
+      "collection": "job-history"
+    },
+    "employees": {
+      "via": "job",
+      "collection": "employee"
     }
   }
 }

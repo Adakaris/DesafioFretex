@@ -64,6 +64,18 @@
       "type": "biginteger",
       "required": true,
       "unique": true
+    },
+    "job_histories": {
+      "via": "employee",
+      "collection": "job-history"
+    },
+    "department": {
+      "via": "employees",
+      "model": "department"
+    },
+    "job": {
+      "model": "job",
+      "via": "employees"
     }
   }
 }
