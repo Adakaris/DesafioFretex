@@ -14,10 +14,12 @@
   "attributes": {
     "Employee_ID": {
       "type": "biginteger",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "Start_Date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "End_Date": {
       "type": "date"

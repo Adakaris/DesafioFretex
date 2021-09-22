@@ -14,7 +14,8 @@
   "attributes": {
     "Employee_ID": {
       "type": "biginteger",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "First_Name": {
       "type": "string",
@@ -29,7 +30,8 @@
     "Email": {
       "type": "string",
       "required": true,
-      "maxLength": 25
+      "maxLength": 25,
+      "unique": true
     },
     "Phone_Number": {
       "type": "string",
@@ -44,7 +46,7 @@
     "Job_ID": {
       "type": "string",
       "required": true,
-      "unique": true,
+      "unique": false,
       "maxLength": 10
     },
     "Salary": {
@@ -53,17 +55,17 @@
     },
     "Commission_PCT": {
       "type": "decimal",
-      "required": true
+      "required": false
     },
     "Manager_ID": {
       "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Department_ID": {
       "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "job_histories": {
       "via": "employee",

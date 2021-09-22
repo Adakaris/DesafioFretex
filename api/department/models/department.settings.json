@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Department_ID": {
-      "type": "biginteger",
-      "required": true,
-      "unique": false
-    },
     "Department_Name": {
       "type": "string",
       "required": true,
@@ -26,7 +21,7 @@
     "Manager_ID": {
       "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "job_histories": {
       "via": "department",
@@ -35,6 +30,10 @@
     "employees": {
       "via": "department",
       "collection": "employee"
+    },
+    "Department_ID": {
+      "required": true,
+      "type": "biginteger"
     }
   }
 }
