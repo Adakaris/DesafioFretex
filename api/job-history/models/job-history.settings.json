@@ -36,8 +36,8 @@
       "model": "department"
     },
     "job": {
-      "model": "job",
-      "via": "job_histories"
+      "via": "job_histories",
+      "model": "job"
     },
     "employee": {
       "via": "job_histories",
