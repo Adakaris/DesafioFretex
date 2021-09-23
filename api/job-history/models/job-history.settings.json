@@ -24,11 +24,6 @@
     "End_Date": {
       "type": "date"
     },
-    "Job_ID": {
-      "type": "string",
-      "maxLength": 10,
-      "required": true
-    },
     "Department_ID": {
       "type": "biginteger",
       "required": true
@@ -37,13 +32,18 @@
       "via": "job_histories",
       "model": "department"
     },
-    "job": {
-      "via": "job_histories",
-      "model": "job"
-    },
     "employee": {
       "via": "job_histories",
       "model": "employee"
+    },
+    "job": {
+      "model": "job",
+      "via": "job_histories"
+    },
+    "Job_ID": {
+      "type": "string",
+      "maxLength": 10,
+      "required": true
     }
   }
 }

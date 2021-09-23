@@ -24,10 +24,6 @@
     "Max_Salary": {
       "type": "decimal"
     },
-    "job_histories": {
-      "via": "job",
-      "collection": "job-history"
-    },
     "employees": {
       "via": "job",
       "collection": "employee"
@@ -36,6 +32,10 @@
       "type": "string",
       "required": true,
       "maxLength": 10
+    },
+    "job_histories": {
+      "via": "job",
+      "collection": "job-history"
     }
   }
 }
