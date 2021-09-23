@@ -15,7 +15,7 @@
     "Employee_ID": {
       "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Start_Date": {
       "type": "date",
